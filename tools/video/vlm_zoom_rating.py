@@ -60,7 +60,7 @@ class VlmZoomRating(BaseTool):
     provider = "openmontage"
     stability = ToolStability.EXPERIMENTAL
     execution_mode = ExecutionMode.SYNC
-    determinism = Determinism.SEEDED
+    determinism = Determinism.STOCHASTIC
     runtime = ToolRuntime.LOCAL_GPU
 
     dependencies = ["cmd:ffmpeg", "cmd:ffprobe"]
